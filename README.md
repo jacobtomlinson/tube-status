@@ -1,4 +1,4 @@
-# _TFL tube line status for Python_
+# _TFL Tube Line Status for Python_
 [![PyPi version](https://pypip.in/version/tubestatus/badge.svg)](https://pypi.python.org/pypi/tubestatus/)
 [![PyPi downloads](https://pypip.in/download/tubestatus/badge.svg)](https://pypi.python.org/pypi/tubestatus/)
 [![Supported Python versions](https://pypip.in/py_versions/tubestatus/badge.svg)](https://pypi.python.org/pypi/tubestatus/)
@@ -6,7 +6,7 @@
 [![Build Status](https://travis-ci.org/jacobtomlinson/tube-status.svg?branch=master)](https://travis-ci.org/jacobtomlinson/tube-status)
 
 
-_A Python module for accessing tube line status data via [Transport for London](https://www.tfl.gov.uk/info-for/open-data-users/our-feeds?intcmp=3671#on-this-page-1)'s open data API._
+_A Python module for accessing tube line status data for the London Underground via [Transport for London](https://www.tfl.gov.uk/info-for/open-data-users/our-feeds?intcmp=3671#on-this-page-1)'s open data API._
 
 ## Installation
 
@@ -19,9 +19,14 @@ $ pip install tubestatus
 ```Python
 import tubestatus
 
+# Create a new status object for retreiving data
 current_status = tubestatus.Status()
 
-for line in current_status.list_lines():
+# Get a list of tube lines
+lines = current_status.list_lines()
+
+# Loop through the lines and print the status of each one
+for line in lines:
     print line, "-", current_status.get_status(line)
 
 ```
