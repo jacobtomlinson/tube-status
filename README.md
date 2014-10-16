@@ -19,7 +19,7 @@ $ pip install tubestatus
 ```Python
 import tubestatus
 
-# Create a new status object for retreiving data
+# Create a new status object for retrieving data
 current_status = tubestatus.Status()
 
 # Get a list of tube lines
@@ -33,19 +33,19 @@ for line in lines:
 
 Example output
 ```
-Jubilee - GS
-Bakerloo - GS
-Central - GS
-Metropolitan - GS
-District - GS
-Piccadilly - GS
-Overground - GS
-Victoria - GS
-DLR - GS
-Hammersmith and City - GS
-Waterloo and City - GS
-Circle - GS
-Northern - GS
+Jubilee - Good Service
+Bakerloo - Good Service
+Central - Good Service
+Metropolitan - Good Service
+District - Good Service
+Piccadilly - Good Service
+Overground - Good Service
+Victoria - Good Service
+DLR - Good Service
+Hammersmith and City - Good Service
+Waterloo and City - Good Service
+Circle - Good Service
+Northern - Good Service
 
 ```
 

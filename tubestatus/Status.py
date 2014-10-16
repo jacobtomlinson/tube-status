@@ -1,3 +1,7 @@
+"""
+Code based on https://github.com/18sg/undergroundStatus/blob/master/undergroundStatus.py
+"""
+
 from time import time
 import requests
 import xml.etree.ElementTree as et
@@ -25,12 +29,13 @@ class Status(object):
             current_line = Line()
             current_line.name = child[1].get('Name')
             current_line.status_code = child[2].get('ID')
+            current_line.description = child[2].get('Description')
             self.lines[current_line.name] = current_line
 
     def get_status(self, line_code):
         self.update_status()
         if line_code in self.lines:
-            return self.lines[line_code].status_code
+            return self.lines[line_code].description
         else:
             return None
 

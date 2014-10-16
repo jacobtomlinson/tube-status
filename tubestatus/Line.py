@@ -3,3 +3,4 @@ class Line(object):
 
         self.name = None
         self.status_code = None
+        self.description = None
