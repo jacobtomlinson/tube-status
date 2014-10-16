@@ -3,7 +3,7 @@
 [![PyPi downloads](https://pypip.in/d/tubestatus/badge.svg?style=flat)](https://pypi.python.org/pypi/datapoint/)
 [![Supported Python versions](https://pypip.in/py_versions/tubestatus/badge.svg?style=flat)](https://pypi.python.org/pypi/datapoint/)
 [![Development Status](https://pypip.in/status/tubestatus/badge.svg?style=flat)](https://pypi.python.org/pypi/datapoint/)
-[![Build Status](https://travis-ci.org/jacobtomlinson/tubestatus.svg?branch=master)](https://travis-ci.org/jacobtomlinson/datapoint-python)
+[![Build Status](https://travis-ci.org/jacobtomlinson/tube-status.svg?branch=master)](https://travis-ci.org/jacobtomlinson/tube-status)
 
 
 _A Python module for accessing tube line status data via [Transport for London](https://www.tfl.gov.uk/info-for/open-data-users/our-feeds?intcmp=3671#on-this-page-1)'s open data API._
