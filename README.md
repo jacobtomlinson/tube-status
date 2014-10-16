@@ -1,8 +1,8 @@
 # _TFL tube line status for Python_
-[![PyPi version](https://pypip.in/v/tubestatus/badge.svg?style=flat)](https://pypi.python.org/pypi/datapoint/)
-[![PyPi downloads](https://pypip.in/d/tubestatus/badge.svg?style=flat)](https://pypi.python.org/pypi/datapoint/)
-[![Supported Python versions](https://pypip.in/py_versions/tubestatus/badge.svg?style=flat)](https://pypi.python.org/pypi/datapoint/)
-[![Development Status](https://pypip.in/status/tubestatus/badge.svg?style=flat)](https://pypi.python.org/pypi/datapoint/)
+[![PyPi version](https://pypip.in/v/tubestatus/badge.svg?style=flat)](https://pypi.python.org/pypi/tubestatus/)
+[![PyPi downloads](https://pypip.in/d/tubestatus/badge.svg?style=flat)](https://pypi.python.org/pypi/tubestatus/)
+[![Supported Python versions](https://pypip.in/py_versions/tubestatus/badge.svg?style=flat)](https://pypi.python.org/pypi/tubestatus/)
+[![Development Status](https://pypip.in/status/tubestatus/badge.svg?style=flat)](https://pypi.python.org/pypi/tubestatus/)
 [![Build Status](https://travis-ci.org/jacobtomlinson/tube-status.svg?branch=master)](https://travis-ci.org/jacobtomlinson/tube-status)
 
 
