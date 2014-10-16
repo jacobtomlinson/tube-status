@@ -2,7 +2,7 @@
 
 from distutils.core import setup
 
-setup(name='tube-status',
+setup(name='tubestatus',
       version='0.1.0',
       install_requires=[
           "requests >= 2.3.0",
@@ -15,7 +15,7 @@ setup(name='tube-status',
       maintainer_email='jacob@jacobtomlinson.co.uk',
       url='https://github.com/jacobtomlinson/tube-status',
       license='TBC',
-      packages=['tube-status'],
+      packages=['tubestatus'],
       classifiers=[
           'Development Status :: 3 - Alpha',
           'Programming Language :: Python :: 2.6',
