@@ -1,0 +1,21 @@
+language: python
+python:
+- '2.6'
+- '2.7'
+install:
+- pip install .
+- pip install pylint
+- pip install -r requirements.txt
+script:
+- nosetests -w tests/unit
+- nosetests -w tests/integration
+- pylint -E tube-status
+deploy:
+  provider: pypi
+  user: jacob.tomlinson
+  password:
+    secure: lxlsbRqzo7XTAtjbU8KlkEdB/foHJgtQ1lYBa147k0x4PTaoicGUffmqWOO6P8+qU3sBZTMxeMIyyNWY3aS9k1JrFi7UYkLxSTI50BG/atNPiNa3xnOVuFjj8i3hDfXudRmWcFtxZH+83yqQ5VzEesn1UNdnBV87jvHv9MviFrc=
+  on:
+    tags: true
+    all_branches: true
+    repo: jacobtomlinson/python-tube-status
