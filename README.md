@@ -1,4 +1,4 @@
-# _TFL Tube Line Status for Python_
+# _TfL Tube Line Status for Python_
 [![PyPi version](https://pypip.in/version/tubestatus/badge.svg)](https://pypi.python.org/pypi/tubestatus/)
 [![PyPi downloads](https://pypip.in/download/tubestatus/badge.svg)](https://pypi.python.org/pypi/tubestatus/)
 [![Supported Python versions](https://pypip.in/py_versions/tubestatus/badge.svg)](https://pypi.python.org/pypi/tubestatus/)
