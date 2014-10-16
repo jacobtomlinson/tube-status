@@ -14,6 +14,7 @@ class Status(object):
     """
     def __init__(self):
         self.update_url = "http://cloud.tfl.gov.uk/TrackerNet/LineStatus"
+        self.xmlns = "{http://webservices.lul.co.uk/}"
         self.lines = {}
         self.last_update = 0
         self.last_request = None
@@ -27,15 +28,19 @@ class Status(object):
         root = et.fromstring(self.last_request.content)
         for child in root:
             current_line = Line()
-            current_line.name = child[1].get('Name')
-            current_line.status_code = child[2].get('ID')
-            current_line.description = child[2].get('Description')
+            current_line.id = child.find(self.xmlns + 'Line').get('ID')
+            current_line.name = child.find(self.xmlns + 'Line').get('Name')
+            current_line.status_code = child.find(self.xmlns + 'Status').get('ID')
+            current_line.status_details = child.get('StatusDetails')
+            current_line.css_class = child.find(self.xmlns + 'Status').get('CssClass')
+            current_line.description = child.find(self.xmlns + 'Status').get('Description')
+            current_line.is_active = child.find(self.xmlns + 'Status').get('IsActive')
             self.lines[current_line.name] = current_line
 
     def get_status(self, line_code):
         self.update_status()
         if line_code in self.lines:
-            return self.lines[line_code].description
+            return self.lines[line_code]
         else:
             return None
 

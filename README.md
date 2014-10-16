@@ -27,7 +27,7 @@ lines = current_status.list_lines()
 
 # Loop through the lines and print the status of each one
 for line in lines:
-    print line, "-", current_status.get_status(line)
+    print line, "-", current_status.get_status(line).description
 
 ```
 
