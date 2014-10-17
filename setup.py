@@ -3,7 +3,7 @@
 from distutils.core import setup
 
 setup(name='tubestatus',
-      version='0.1.0',
+      version='0.2.0',
       install_requires=[
           "requests >= 2.3.0",
       ],
