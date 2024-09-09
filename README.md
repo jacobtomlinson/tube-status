@@ -59,4 +59,4 @@ Please feel free to submit issues and pull requests.
 
 ## License
 
-Currently under decision.
+BSD3
